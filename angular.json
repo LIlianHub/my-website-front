@@ -3,36 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "RolandGratos2022": {
+    "my-website-front": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss",
-          "skipTests": true
-        },
-        "@schematics/angular:class": {
-          "skipTests": true
-        },
-        "@schematics/angular:directive": {
-          "skipTests": true
-        },
-        "@schematics/angular:guard": {
-          "skipTests": true
-        },
-        "@schematics/angular:interceptor": {
-          "skipTests": true
-        },
-        "@schematics/angular:pipe": {
-          "skipTests": true
-        },
-        "@schematics/angular:resolver": {
-          "skipTests": true
-        },
-        "@schematics/angular:service": {
-          "skipTests": true
-        },
-        "@schematics/angular:application": {
-          "strict": true
+          "style": "scss"
         }
       },
       "root": "",
@@ -42,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/roland-gratos2022",
+            "outputPath": "dist/my-website-front",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -53,11 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/primeflex/primeflex.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -67,7 +38,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "2mb"
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -98,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "RolandGratos2022:build:production"
+              "browserTarget": "my-website-front:build:production"
             },
             "development": {
-              "browserTarget": "RolandGratos2022:build:development"
+              "browserTarget": "my-website-front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -109,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "RolandGratos2022:build"
+            "browserTarget": "my-website-front:build"
           }
         },
         "test": {
@@ -132,6 +103,5 @@
         }
       }
     }
-  },
-  "defaultProject": "RolandGratos2022"
+  }
 }
