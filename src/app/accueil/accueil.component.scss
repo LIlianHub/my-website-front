@@ -13,7 +13,7 @@
 .area{
     background-color: rgb(33, 157, 179);  
     width: 100%;
-    height:100vh;
+    height:70vh;
 }
 .circles{
     position: absolute;
@@ -31,7 +31,7 @@
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -150px;
+    bottom: 0px;
 }
 .circles li:nth-child(1){
     left: 25%;
