@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "reset.css";
+@import "../node_modules/primeicons/primeicons.css";
+@import "../node_modules/primeng/resources/themes/lara-light-blue/theme.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
+
+@font-face {
+    font-family: "Pour le titre";
+    src: url("font/b28b8b56b2368e797d2c09f5696de8b5.woff2") format("woff2"),
+           url("font/b28b8b56b2368e797d2c09f5696de8b5.woff") format("woff");
+   }
+   
+
+
+
+.root{
+    font-family: "Pour le titre";
+}
