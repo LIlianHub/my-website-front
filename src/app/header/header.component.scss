@@ -1,0 +1,33 @@
+.titre-gauche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 2px rgb(128, 125, 125);
+}
+
+.titre-gauche h1{
+    display: flex;
+    flex: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Pour le titre";
+}
+
+.titre-gauche img{
+    display: flex;
+    flex: 10%;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    .titre-gauche {
+        border-right: none;
+    }
+    .edit-menubar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
