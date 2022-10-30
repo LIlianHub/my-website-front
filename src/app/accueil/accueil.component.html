@@ -2,13 +2,17 @@
 <div class="corps" [class]="couleurBackground">
   <div class="context">
     <!--<p-carousel [value]="presentations" orientation="vertical">
-      <ng-template let-car pTemplate="item">
-          Content to display
+
+
+      <ng-template let-prod pTemplate="monContenu">
+        <app-element-accueil [monContenu]="prod"></app-element-accueil>
       </ng-template>
+
+
     </p-carousel>-->
 
-      <app-element-accueil></app-element-accueil>
-    
+
+
   </div>
   <div class="bubbles">
     <div class="bubble"></div>
