@@ -5,7 +5,7 @@
     border-right: solid 2px rgb(128, 125, 125);
 }
 
-.titre-gauche h1{
+.titre-gauche h1 {
     display: flex;
     flex: 90%;
     padding-left: 10px;
@@ -13,21 +13,54 @@
     font-family: "Pour le titre";
 }
 
-.titre-gauche img{
+.titre-gauche img {
     display: flex;
     flex: 10%;
+}
+
+.titre-droite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titre-droite h5 {
+    padding: 8px;
+}
+
+.boite-droite {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.titre-tel {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titre-tel h1 {
+    font-family: "Pour le titre";
+    padding: 5px;
 }
 
 
 
 @media only screen and (max-width: 960px) {
+
     .titre-gauche {
-        border-right: none;
+        display: none;
     }
-    .edit-menubar{
+
+    .titre-tel{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 }

@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import {CarouselModule} from 'primeng/carousel';
 import { ElementAccueilComponent } from './element-accueil/element-accueil.component';
 import {SelectButtonModule} from 'primeng/selectbutton';
+import {InputSwitchModule} from 'primeng/inputswitch';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {SelectButtonModule} from 'primeng/selectbutton';
     MenubarModule,
     CarouselModule,
     SelectButtonModule,
+    InputSwitchModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

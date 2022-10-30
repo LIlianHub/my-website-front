@@ -1,13 +1,20 @@
-<p-menubar [model]="items" class="edit-menubar">
-
+<p-menubar [model]="items">
     <ng-template pTemplate="start">
         <div class="titre-gauche">
             <img src="../../assets/icon/lilian.ico" height="40" class="mr-2">
             <h1>BALLEJOS Lilian</h1>
         </div>
-
     </ng-template>
     <ng-template pTemplate="end">
-        <p-selectButton [options]="stateOptions"  optionLabel="label" optionValue="value"></p-selectButton>
+        <div class="boite-droite">
+            <div class="titre-tel">
+                <img src="../../assets/icon/lilian.ico" height="40" class="mr-2">
+                <h1>BALLEJOS Lilian</h1>
+            </div>
+            <div class="titre-droite">
+                <h5>Mode Sombre</h5>
+                <p-inputSwitch formControlName="enabled"></p-inputSwitch>
+            </div>
+        </div>
     </ng-template>
 </p-menubar>
