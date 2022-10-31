@@ -1,3 +1,3 @@
 export class ContenuAccueil {
-    contenu!: string;
+    contenu!: string
   }

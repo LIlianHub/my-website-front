@@ -17,6 +17,8 @@ import {InputSwitchModule} from 'primeng/inputswitch';
 import { CookieService } from 'ngx-cookie-service';
 import { FormsModule } from '@angular/forms';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import { ProjetComponent } from './projet/projet.component';
+import { ProjetListComponent } from './projet-list/projet-list.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     HeaderComponent,
     FooterComponent,
     ElementAccueilComponent,
+    ProjetComponent,
+    ProjetListComponent,
   ],
   imports: [
     BrowserModule,
