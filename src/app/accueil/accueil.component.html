@@ -9,6 +9,12 @@
     </p-carousel>
 
   </div>
+
+  <div class="loading-accueil" *ngIf="!loading">
+    <h2>Chargement...</h2>
+    <p-progressSpinner></p-progressSpinner>
+  </div>
+
   <div class="bubbles">
     <div class="bubble"></div>
     <div class="bubble"></div>

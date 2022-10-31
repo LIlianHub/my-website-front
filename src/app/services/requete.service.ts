@@ -7,11 +7,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 
-export class DataAccueilService {
+export class RequeteService {
   
   constructor(private http: HttpClient) { }
 
   getAllDataAccueil(): Observable<ContenuAccueil[]> {
     return this.http.get<ContenuAccueil[]>('http://localhost:3000/recup-data-accueil');
   }
+  
 }

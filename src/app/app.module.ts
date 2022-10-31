@@ -14,6 +14,9 @@ import {CarouselModule} from 'primeng/carousel';
 import { ElementAccueilComponent } from './element-accueil/element-accueil.component';
 import {SelectButtonModule} from 'primeng/selectbutton';
 import {InputSwitchModule} from 'primeng/inputswitch';
+import { CookieService } from 'ngx-cookie-service';
+import { FormsModule } from '@angular/forms';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
 
 @NgModule({
   declarations: [
@@ -33,8 +36,11 @@ import {InputSwitchModule} from 'primeng/inputswitch';
     SelectButtonModule,
     InputSwitchModule,
     HttpClientModule,
+    FormsModule,
+    ProgressSpinnerModule,
+    
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

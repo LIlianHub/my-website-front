@@ -1,5 +1,17 @@
 footer{
-    width: 100%;
-    background-color: black;
-    color: white;
+    color: #495057;
+    border-radius: 10px;
+    border: solid 2px #dee2e6;
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
 }

@@ -1,31 +1,33 @@
-.boite-accueil{
+.boite-accueil {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     align-items: left;
     color: white;
-    border: 1px solid rgba(204, 216, 218, 0.404);;
+    border: 1px solid rgba(204, 216, 218, 0.404);
+    ;
     width: 60%;
     border-radius: 10px;
     background-color: rgba(204, 216, 218, 0.404);
     text-align: justify;
-    padding: 5px;
+    padding: 20px;
+    height: 80vh;
 
 }
 
-.boite-accueil h2{
+.boite-accueil h2 {
     font-size: 2em;
 }
 
-.boite-accueil p{
+.boite-accueil p {
     font-size: 1.5em;
     margin-bottom: 25px;
 
 }
 
-.boite-accueil h1{
+.boite-accueil h1 {
     font-family: "Pour le titre";
-    font-size: 3em;
+    font-size: 2em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -34,15 +36,22 @@
 
 }
 
-.boite-carrou{
+.boite-carrou {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.boite-accueil hr{
+.boite-accueil hr {
     width: 100%;
     margin-bottom: 35px;
-
 }
 
+
+@media only screen and (max-width: 960px) {
+
+    .boite-accueil {
+        width: 100%;
+        height: inherit;
+    }
+}

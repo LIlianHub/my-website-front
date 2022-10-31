@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DataAccueilService } from '../services/data_accueil.service';
+import { RequeteService } from '../services/requete.service';
 import { ContenuAccueil } from '../model/contenu-accueil.model';
+import { GestionCookieService } from '../services/gestionCookie.service';
 
 @Component({
   selector: 'app-accueil',
@@ -10,20 +11,29 @@ import { ContenuAccueil } from '../model/contenu-accueil.model';
 export class AccueilComponent implements OnInit {
   couleurBackground: string;
   presentations: ContenuAccueil[];
-  loading: boolean = false;
+  loading: boolean;
 
-  constructor(private dataaccueilservice: DataAccueilService) {}
+  constructor(
+    private requeteService: RequeteService,
+    private gestioncookieservice: GestionCookieService
+  ) {}
 
   ngOnInit() {
-    this.couleurBackground = 'background-blue';
-
-    this.dataaccueilservice
+    this.requeteService
       .getAllDataAccueil()
       .subscribe((contenu: ContenuAccueil[]) => {
         this.presentations = contenu;
         this.loading = true;
       });
 
-    
+    this.changeThemeAccueil(this.gestioncookieservice.getTheme()); //setgoodbackground
+  }
+
+  changeThemeAccueil(choice: boolean) {
+    if (choice) {
+      this.couleurBackground = 'background-dark';
+    } else {
+      this.couleurBackground = 'background-blue';
+    }
   }
 }

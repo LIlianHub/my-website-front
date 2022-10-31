@@ -1,5 +1,15 @@
 @font-face {
     font-family: "Pour le titre";
     src: url("../assets/font/b28b8b56b2368e797d2c09f5696de8b5.woff2") format("woff2"),
-           url("../assets/font/b28b8b56b2368e797d2c09f5696de8b5.woff") format("woff");
-   }
+        url("../assets/font/b28b8b56b2368e797d2c09f5696de8b5.woff") format("woff");
+}
+
+
+/*golbal background for every module*/
+.background-blue {
+    background-color: rgb(33, 157, 179);
+}
+
+.background-dark {
+    background-color: rgb(0, 0, 0);
+}

@@ -13,7 +13,7 @@
             </div>
             <div class="titre-droite">
                 <h5>Mode Sombre</h5>
-                <p-inputSwitch formControlName="enabled"></p-inputSwitch>
+                <p-inputSwitch (onChange)="cliqueTheme($event)" [(ngModel)]="onDarkMode"></p-inputSwitch>
             </div>
         </div>
     </ng-template>
