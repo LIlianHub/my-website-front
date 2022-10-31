@@ -1,17 +1,12 @@
 <app-header></app-header>
 <div class="corps" [class]="couleurBackground">
-  <div class="context">
-    <!--<p-carousel [value]="presentations" orientation="vertical">
+  <div class="context" *ngIf="loading">
 
-
-      <ng-template let-prod pTemplate="monContenu">
+    <p-carousel [value]="presentations" [numVisible]="1" [numScroll]="1" [autoplayInterval]="5000" [circular]="true">
+      <ng-template let-prod pTemplate="monProduit">
         <app-element-accueil [monContenu]="prod"></app-element-accueil>
       </ng-template>
-
-
-    </p-carousel>-->
-
-
+    </p-carousel>
 
   </div>
   <div class="bubbles">

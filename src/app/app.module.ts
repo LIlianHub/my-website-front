@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +21,7 @@ import {InputSwitchModule} from 'primeng/inputswitch';
     AccueilComponent,
     HeaderComponent,
     FooterComponent,
-    ElementAccueilComponent
+    ElementAccueilComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +32,7 @@ import {InputSwitchModule} from 'primeng/inputswitch';
     CarouselModule,
     SelectButtonModule,
     InputSwitchModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
