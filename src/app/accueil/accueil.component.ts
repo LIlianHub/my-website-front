@@ -27,6 +27,10 @@ export class AccueilComponent implements OnInit {
       });
 
     this.changeThemeAccueil(this.gestioncookieservice.getTheme()); //setgoodbackground
+
+    this.gestioncookieservice.onDarkTheme$.subscribe((theme) => {
+      this.changeThemeAccueil(theme);
+    });
   }
 
   changeThemeAccueil(choice: boolean) {

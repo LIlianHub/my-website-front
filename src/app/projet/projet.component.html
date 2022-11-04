@@ -1,3 +1,8 @@
 <app-header></app-header>
-<p>projet works!</p>
+<div *ngFor="let projet of allProjet">
+    <div *ngIf="loading">
+        {{projet.titre}}
+        <img [src]="projet.img" [alt]="projet.id">
+    </div>
+</div>
 <app-footer></app-footer>

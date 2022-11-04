@@ -1,0 +1,9 @@
+<app-header></app-header>
+
+<div *ngIf="loading">
+    {{leProjet.titre}}
+    <img [src]="leProjet.img" [alt]="leProjet.id">
+    <div [innerHTML]="leProjet.contenu"></div>
+</div>
+
+<app-footer></app-footer>

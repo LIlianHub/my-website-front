@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
-import { Observable } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class GestionCookieService {
+
+  onDarkTheme$: Subject<boolean> = new Subject<boolean>();
+
   constructor(private cookieService: CookieService) {}
 
   getTheme(): boolean {
@@ -14,6 +17,6 @@ export class GestionCookieService {
 
   changeTheme(theme: boolean): void {
     this.cookieService.set('onDarkTheme-User', theme.toString());
-    window.location.reload();
+    this.onDarkTheme$.next(theme);
   }
 }

@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import {GestionCookieService} from '../services/gestionCookie.service'
+import { GestionCookieService } from '../services/gestionCookie.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
   items: MenuItem[];
 
   onDarkMode: boolean;
 
-  constructor(private gestioncookieservice: GestionCookieService){}
+  constructor(private gestioncookieservice: GestionCookieService) {}
 
   stateOptions: any[];
 
@@ -21,12 +21,16 @@ export class HeaderComponent implements OnInit{
       {
         label: 'Accueil',
         icon: 'pi pi-fw pi-home',
-        routerLink: "/accueil"
+        routerLink: '/accueil',
       },
       {
         label: 'Projet',
         icon: 'pi pi-fw pi-pencil',
-        items: [{ label: 'Projet 1' }, { label: 'Projet 2' }],
+        items: [
+          { label: 'Tous les Projets', routerLink: '/projet' },
+          { label: 'Projet 1' },
+          { label: 'Projet 2' },
+        ],
       },
       {
         label: 'Me contacter',
@@ -48,6 +52,6 @@ export class HeaderComponent implements OnInit{
   }
 
   cliqueTheme(e: any) {
-      this.gestioncookieservice.changeTheme(e.checked);
+    this.gestioncookieservice.changeTheme(e.checked);
   }
 }

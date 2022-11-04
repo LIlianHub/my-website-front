@@ -18,7 +18,8 @@ import { CookieService } from 'ngx-cookie-service';
 import { FormsModule } from '@angular/forms';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import { ProjetComponent } from './projet/projet.component';
-import { ProjetListComponent } from './projet-list/projet-list.component';
+import { ProjetSoloComponent } from './projet-solo/projet-solo.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProjetListComponent } from './projet-list/projet-list.component';
     FooterComponent,
     ElementAccueilComponent,
     ProjetComponent,
-    ProjetListComponent,
+    ProjetSoloComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
