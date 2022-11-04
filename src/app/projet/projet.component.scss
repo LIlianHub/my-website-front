@@ -1,0 +1,52 @@
+@import "../app.component.scss";
+
+.grosse-boite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.un-projet{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(101, 104, 101);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.un-projet img{
+    width: 80%;
+    border-radius: 20px;
+}
+
+.un-projet h1{
+    font-size: 2em;
+    font-family: "Pour le titre";
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.un-projet:hover{
+    transform: scale(1.05);
+}
+
+
+
+@media only screen and (max-width: 960px) {
+    .un-projet{
+        width: 90%;
+    }
+  
+}

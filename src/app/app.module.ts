@@ -20,6 +20,7 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import { ProjetComponent } from './projet/projet.component';
 import { ProjetSoloComponent } from './projet-solo/projet-solo.component';
 import { ContactComponent } from './contact/contact.component';
+import {ScrollTopModule} from 'primeng/scrolltop';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { ContactComponent } from './contact/contact.component';
     HttpClientModule,
     FormsModule,
     ProgressSpinnerModule,
+    ScrollTopModule,
     
   ],
   providers: [CookieService],

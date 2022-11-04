@@ -16,7 +16,8 @@ export class GestionCookieService {
   }
 
   changeTheme(theme: boolean): void {
-    this.cookieService.set('onDarkTheme-User', theme.toString());
+    this.cookieService.set('onDarkTheme-User', theme.toString(), { path: "/"});
     this.onDarkTheme$.next(theme);
   }
+
 }

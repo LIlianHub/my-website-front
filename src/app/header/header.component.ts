@@ -8,7 +8,7 @@ import { GestionCookieService } from '../services/gestionCookie.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  items: MenuItem[];
+  items!: MenuItem[];
 
   onDarkMode: boolean;
 
@@ -24,22 +24,27 @@ export class HeaderComponent implements OnInit {
         routerLink: '/accueil',
       },
       {
-        label: 'Projet',
+        label: 'Mes projets',
         icon: 'pi pi-fw pi-pencil',
-        items: [
-          { label: 'Tous les Projets', routerLink: '/projet' },
-          { label: 'Projet 1' },
-          { label: 'Projet 2' },
-        ],
+        routerLink: '/projet',
       },
       {
         label: 'Me contacter',
         icon: 'pi pi-fw pi-inbox',
+        routerLink: '/contact',
       },
       {
         label: 'Mes CVs',
         icon: 'pi pi-fw pi-print',
-        items: [{ label: 'CV Français' }, { label: 'CV Anglais' }],
+        items: [
+          { label: 'CV Français', url: 'http://localhost:3000/cv/fr.pdf' },
+          { label: 'CV Anglais', url: 'http://localhost:3000/cv/en.pdf' },
+        ],
+      },
+      {
+        label: 'GitHub',
+        icon: 'pi pi-fw pi-github',
+        url: "https://github.com/LIlianHub"
       },
     ];
 

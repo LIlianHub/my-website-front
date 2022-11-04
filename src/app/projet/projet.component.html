@@ -1,8 +1,8 @@
 <app-header></app-header>
-<div *ngFor="let projet of allProjet">
-    <div *ngIf="loading">
-        {{projet.titre}}
+<div class="grosse-boite" [class]="couleurBackground" *ngIf="loading">
+    <a *ngFor="let projet of allProjet" class="un-projet" [routerLink]="projet.id.toString()">
+        <h1>{{projet.titre}}</h1>
         <img [src]="projet.img" [alt]="projet.id">
-    </div>
+    </a>
 </div>
 <app-footer></app-footer>

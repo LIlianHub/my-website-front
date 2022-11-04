@@ -1,6 +1,6 @@
 <app-header></app-header>
 
-<div *ngIf="loading">
+<div *ngIf="loading" class="grosse-boite">
     {{leProjet.titre}}
     <img [src]="leProjet.img" [alt]="leProjet.id">
     <div [innerHTML]="leProjet.contenu"></div>
