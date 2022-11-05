@@ -15,6 +15,7 @@ import { RequeteService } from '../services/requete.service';
 export class BoiteMailComponent implements OnInit {
   FormData: FormGroup;
   message!: string;
+  repCapctha: string = "";
 
   constructor(
     private builder: FormBuilder,
@@ -33,7 +34,11 @@ export class BoiteMailComponent implements OnInit {
   }
 
   showResponse(event: any) {
-    console.log(event);
+    this.repCapctha = event.response;
+  }
+
+  resetResultCaptcha(){
+    this.repCapctha = "";
   }
 
   onSubmit() {
@@ -48,7 +53,8 @@ export class BoiteMailComponent implements OnInit {
         console.log(error);
       }
     );
-
-    this.FormData.reset();
+    
+    this.repCapctha = "";
+    this.FormData.reset();    
   }
 }

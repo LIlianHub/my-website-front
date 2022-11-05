@@ -1,14 +1,6 @@
 <app-header></app-header>
 <div class="corps" [class]="couleurBackground">
-  <div class="context" *ngIf="loading">
 
-    <p-carousel [value]="presentations" [numVisible]="1" [numScroll]="1" [autoplayInterval]="5000" [circular]="true">
-      <ng-template let-prod pTemplate="monProduit">
-        <app-element-accueil [monContenu]="prod"></app-element-accueil>
-      </ng-template>
-    </p-carousel>
-
-  </div>
 
   <div class="loading-accueil" *ngIf="!loading">
     <h2>Chargement...</h2>
@@ -66,6 +58,17 @@
     <div class="bubble"></div>
     <div class="bubble"></div>
     <div class="bubble"></div>
+
+    <div class="context" *ngIf="loading">
+
+      <p-carousel styleClass="items-carousel" [value]="presentations" [numVisible]="1" [numScroll]="1"
+        [autoplayInterval]="5000" [circular]="true">
+        <ng-template let-prod pTemplate="monProduit">
+          <app-element-accueil [monContenu]="prod"></app-element-accueil>
+        </ng-template>
+      </p-carousel>
+
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

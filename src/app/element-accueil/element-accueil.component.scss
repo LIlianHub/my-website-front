@@ -1,3 +1,5 @@
+@import "../accueil/accueil.component.scss";
+
 .boite-accueil {
     display: flex;
     flex-direction: column;
@@ -5,13 +7,12 @@
     align-items: left;
     color: white;
     border: 1px solid rgba(204, 216, 218, 0.404);
-    ;
-    width: 60%;
+    width: 75%;
     border-radius: 10px;
-    background-color: rgb(92, 92, 92);
+    background-color: rgba(0, 0, 0, 0.521);
     text-align: justify;
     padding: 20px;
-    height: 80vh;
+
 
 }
 
@@ -56,3 +57,4 @@
         height: inherit;
     }
 }
+
