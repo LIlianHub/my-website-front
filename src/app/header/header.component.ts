@@ -37,8 +37,8 @@ export class HeaderComponent implements OnInit {
         label: 'Mes CVs',
         icon: 'pi pi-fw pi-print',
         items: [
-          { label: 'CV Français', url: 'http://localhost:3000/cv/fr.pdf' },
-          { label: 'CV Anglais', url: 'http://localhost:3000/cv/en.pdf' },
+          { label: 'CV Français', url: 'https://ballejos-lilian.fr:3000/cv/fr.pdf' },
+          { label: 'CV Anglais', url: 'https://ballejos-lilian.fr:3000/cv/en.pdf' },
         ],
       },
       {

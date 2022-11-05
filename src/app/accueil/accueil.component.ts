@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RequeteService } from '../services/requete.service';
 import { ContenuAccueil } from '../model/contenu-accueil.model';
 import { GestionCookieService } from '../services/gestionCookie.service';
+import { Carousel } from 'primeng/carousel';
 
 @Component({
   selector: 'app-accueil',
@@ -16,7 +17,9 @@ export class AccueilComponent implements OnInit {
   constructor(
     private requeteService: RequeteService,
     private gestioncookieservice: GestionCookieService
-  ) {}
+  ) {
+    Carousel.prototype.onTouchMove = () => { };
+  }
 
   ngOnInit() {
     this.requeteService

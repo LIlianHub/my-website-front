@@ -1,13 +1,10 @@
 <app-header></app-header>
 <div class="corps" [class]="couleurBackground">
-
-
-  <div class="loading-accueil" *ngIf="!loading">
-    <h2>Chargement...</h2>
-    <p-progressSpinner></p-progressSpinner>
-  </div>
-
   <div class="bubbles">
+    <div class="loading-accueil" *ngIf="!loading">
+      <h2>Chargement...</h2>
+      <p-progressSpinner></p-progressSpinner>
+    </div>
     <div class="bubble"></div>
     <div class="bubble"></div>
     <div class="bubble"></div>

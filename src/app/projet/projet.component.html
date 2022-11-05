@@ -1,8 +1,64 @@
 <app-header></app-header>
-<div class="grosse-boite" [class]="couleurBackground" *ngIf="loading">
-    <a *ngFor="let projet of allProjet" class="un-projet" [routerLink]="projet.id.toString()">
-        <h1>{{projet.titre}}</h1>
-        <img [src]="projet.img" [alt]="projet.id">
-    </a>
+<div class="bubbles" [class]="couleurBackground">
+    <div class="loading-accueil" *ngIf="!loading">
+        <h2>Chargement...</h2>
+        <p-progressSpinner></p-progressSpinner>
+    </div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="grosse-boite" *ngIf="loading">
+        <a *ngFor="let projet of allProjet" class="un-projet" [routerLink]="projet.id.toString()">
+            <h1>{{projet.titre}}</h1>
+            <img [src]="projet.img" [alt]="projet.id">
+        </a>
+    </div>
 </div>
 <app-footer></app-footer>
