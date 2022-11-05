@@ -4,10 +4,21 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: rgba(63, 63, 63, 0.699);
     border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.521);
+    border: 1px solid rgba(204, 216, 218, 0.404);
+    width: 40%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    color: white;
 }
 
+.centrer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .form-group {
@@ -17,6 +28,7 @@
     justify-content: center;
     margin-bottom: 10px;
     margin-top: 10px;
+    max-width: 100%;
 }
 
 form {
@@ -37,3 +49,10 @@ form label {
     margin-bottom: 5px;
 }
 
+
+@media only screen and (max-width: 960px) {
+    .container{
+        width: 90%;
+    }
+  
+}

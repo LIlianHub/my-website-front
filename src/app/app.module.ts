@@ -25,6 +25,8 @@ import { BoiteMailComponent } from './boite-mail/boite-mail.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {CaptchaModule} from 'primeng/captcha';
+import {ToastModule} from 'primeng/toast';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,8 @@ import {CaptchaModule} from 'primeng/captcha';
     InputTextModule,
     InputTextareaModule,
     CaptchaModule,
+    ToastModule,
+    BrowserAnimationsModule,
     
   ],
   providers: [CookieService],

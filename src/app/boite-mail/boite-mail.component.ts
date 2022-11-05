@@ -6,20 +6,22 @@ import {
   FormControl,
 } from '@angular/forms';
 import { RequeteService } from '../services/requete.service';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-boite-mail',
   templateUrl: './boite-mail.component.html',
   styleUrls: ['./boite-mail.component.scss'],
+  providers: [MessageService],
 })
 export class BoiteMailComponent implements OnInit {
   FormData: FormGroup;
-  message!: string;
-  repCapctha: string = "";
+  repCapctha: string = '  ';
 
   constructor(
     private builder: FormBuilder,
-    private requeteservice: RequeteService
+    private requeteservice: RequeteService,
+    private messageService: MessageService
   ) {}
 
   ngOnInit() {
@@ -37,24 +39,21 @@ export class BoiteMailComponent implements OnInit {
     this.repCapctha = event.response;
   }
 
-  resetResultCaptcha(){
-    this.repCapctha = "";
+  resetResultCaptcha() {
+    this.repCapctha = '';
   }
 
   onSubmit() {
     this.requeteservice.sendMail(this.FormData.value).subscribe(
       (succes) => {
-        this.message = 'Message Envoyé';
-        console.log("coucou");
-        console.log(succes);
+        this.messageService.add({severity:'success', summary:'Confirmation', detail:'Message bien envoyé !'});
       },
       (error) => {
-        this.message = "Erreur lors de l'envoie du message";
-        console.log(error);
+        this.messageService.add({severity:'error', summary:'Erreur', detail:'Le message n\'a pas pu être envoyé !'});
       }
     );
-    
-    this.repCapctha = "";
-    this.FormData.reset();    
+
+    this.repCapctha = '';
+    this.FormData.reset();
   }
 }
