@@ -1,24 +1,5 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.521);
-    border: 1px solid rgba(204, 216, 218, 0.404);
-    width: 40%;
-    margin-bottom: 10%;
-    margin-top: 10%;
-    color: white;
-}
+@import "../contact/contact.component.scss";
 
-.centrer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 
 .form-group {
@@ -38,11 +19,7 @@ form {
     justify-content: center;
 }
 
-.container h2 {
-    text-align: center;
-    font-family: "Pour le titre";
-    font-size: 2em;
-}
+
 
 form label {
     font-size: 1.5em;

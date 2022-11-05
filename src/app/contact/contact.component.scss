@@ -1,5 +1,89 @@
 @import "../app.component.scss";
 
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.521);
+    border: 1px solid rgba(204, 216, 218, 0.404);
+    width: 40%;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.container h2 {
+    text-align: center;
+    font-family: "Pour le titre";
+    font-size: 2em;
+}
+
+.container h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*Reseau sociaux*/
+.boite-reseau{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boite-reseau a{
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+.boite-reseau a:hover{
+    color:rgb(90, 90, 90);
+}
+
+
+
+.container p{
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.container a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container a:hover{
+    text-decoration: underline;
+    color:rgb(90, 90, 90);
+}
+
+.centrer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+    .container{
+        width: 90%;
+    }
+  
+}
 

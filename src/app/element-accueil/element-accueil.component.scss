@@ -24,7 +24,13 @@
 }
 
 .boite-accueil h2 {
+    font-family: "Pour le titre";
     font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+
 }
 
 .boite-accueil p {
@@ -36,7 +42,6 @@
 .boite-accueil h1 {
     font-family: "Pour le titre";
     font-size: 3em;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -85,9 +90,10 @@
     align-items: center;
 }
 
-.boite-accueil hr {
-    width: 100%;
-    margin-bottom: 35px;
+.boite-accueil hr{
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 
