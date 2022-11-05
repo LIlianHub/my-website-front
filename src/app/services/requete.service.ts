@@ -3,6 +3,7 @@ import { ContenuAccueil } from '../model/contenu-accueil.model';
 import { ContenuProjet } from '../model/contenu-projet.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root',
@@ -25,6 +26,14 @@ export class RequeteService {
   getAllDataProjet(): Observable<ContenuProjet[]> {
     return this.http.get<ContenuProjet[]>(
       'http://localhost:3000/recup-data-projet'
+    );
+  }
+
+  sendMail(contenu: any) {
+    return this.http.post<any>('http://localhost:3000/send-mail', contenu).pipe(
+      map((reponse: any) => {
+        return reponse;
+      })
     );
   }
 }

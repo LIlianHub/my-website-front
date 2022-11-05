@@ -1,0 +1,29 @@
+
+<script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=loadCaptcha" async defer></script>
+<div class="container">
+    <h2>Me Contacter</h2>
+    <div>
+        <form [formGroup]="FormData" (ngSubmit)="onSubmit()">
+            <p *ngIf="message != null">{{message}}</p>
+            <div class="form-group">
+                <label for="sujet">Sujet</label>
+                <input type="text" class="form-control" name="Sujet" placeholder="Entrer un sujet"
+                    formControlName="Sujet" pInputText>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" name="Email" aria-describedby="emailHelp"
+                    placeholder="Entrer une adresse mail" formControlName="Email" pInputText>
+            </div>
+            <div class="form-group">
+                <label for="comment">Votre Message</label>
+                <textarea class="form-control" formControlName="Comment" name="Comment" pInputTextarea
+                    [autoResize]="true"></textarea>
+            </div>
+            <div class="form-group">
+                <p-captcha siteKey="YOUR_SITE_KEY" (onResponse)="showResponse($event)" initCallback="loadCaptcha"></p-captcha>
+            </div>
+            <p-button type="submit" label="Submit" [disabled]="!FormData.valid" icon="pi pi-check"></p-button>
+        </form>
+    </div>
+</div>

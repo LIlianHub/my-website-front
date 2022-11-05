@@ -15,12 +15,16 @@ import { ElementAccueilComponent } from './element-accueil/element-accueil.compo
 import {SelectButtonModule} from 'primeng/selectbutton';
 import {InputSwitchModule} from 'primeng/inputswitch';
 import { CookieService } from 'ngx-cookie-service';
-import { FormsModule } from '@angular/forms';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import { ProjetComponent } from './projet/projet.component';
 import { ProjetSoloComponent } from './projet-solo/projet-solo.component';
 import { ContactComponent } from './contact/contact.component';
 import {ScrollTopModule} from 'primeng/scrolltop';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BoiteMailComponent } from './boite-mail/boite-mail.component';
+import {InputTextModule} from 'primeng/inputtext';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import {CaptchaModule} from 'primeng/captcha';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,7 @@ import {ScrollTopModule} from 'primeng/scrolltop';
     ProjetComponent,
     ProjetSoloComponent,
     ContactComponent,
+    BoiteMailComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +51,10 @@ import {ScrollTopModule} from 'primeng/scrolltop';
     FormsModule,
     ProgressSpinnerModule,
     ScrollTopModule,
+    ReactiveFormsModule,
+    InputTextModule,
+    InputTextareaModule,
+    CaptchaModule,
     
   ],
   providers: [CookieService],
