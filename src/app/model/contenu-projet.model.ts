@@ -1,6 +1,6 @@
 export class ContenuProjet {
     contenu!: string;
-    id!: number;
+    id!: string;
     img!: string;
     titre!: string;
   }

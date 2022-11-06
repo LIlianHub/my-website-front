@@ -16,7 +16,7 @@ import { MessageService } from 'primeng/api';
 })
 export class BoiteMailComponent implements OnInit {
   FormData: FormGroup;
-  repCapctha: string = '  ';
+  repCapctha: string = '';
 
   constructor(
     private builder: FormBuilder,

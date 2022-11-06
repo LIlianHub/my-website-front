@@ -1,3 +1,5 @@
+@import "../app.component.scss";
+
 .grosse-boite {
     display: flex;
     flex-direction: column;
@@ -6,3 +8,77 @@
     width: 100%;
 }
 
+
+.boite-projet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(204, 216, 218, 0.404);
+    width: 75%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.521);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.boite-projet h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Pour le titre";
+}
+
+.boite-projet h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Pour le titre";
+}
+
+.img-presentation{
+    width: 40%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.contenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenu h2{
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.contenu hr{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.contenu p{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.contenu p + p{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .boite-projet {
+        width: 90%;
+    }
+
+    .img-presentation{
+        width: 90%;
+    }
+
+}

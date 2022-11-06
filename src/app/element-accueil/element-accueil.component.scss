@@ -15,12 +15,16 @@
 }
 
 .boite-accueil a{
+    color: white;
     text-decoration: none;
-    font-weight: bold;   
+    font-weight: bold;
 }
+
+
 
 .boite-accueil a:hover{
     text-decoration: underline;
+    color:rgb(90, 90, 90);
 }
 
 .boite-accueil h2 {
