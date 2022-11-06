@@ -1,17 +1,67 @@
 <app-header></app-header>
 
-<div class="grosse-boite" [class]="couleurBackground">
+<div class="bubbles" [class]="couleurBackground">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
     <div class="loading-accueil" *ngIf="!loading">
         <h2>Chargement...</h2>
         <p-progressSpinner></p-progressSpinner>
     </div>
 
-
-    <div *ngIf="loading" class="boite-projet">
-        <h1>{{leProjet.titre}}</h1>
-        <img [src]="leProjet.img" [alt]="leProjet.id" class="img-presentation">
-        <div [innerHTML]="leProjet.contenu"></div>
+    <div class="grosse-boite">
+        <div *ngIf="loading" class="boite-projet">
+            <h1>{{leProjet.titre}}</h1>
+            <img [src]="leProjet.img" [alt]="leProjet.id" class="img-presentation">
+            <div [innerHTML]="leProjet.contenu"></div>
+        </div>
     </div>
 </div>
-
 <app-footer></app-footer>

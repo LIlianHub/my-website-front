@@ -18,7 +18,8 @@ export class AccueilComponent implements OnInit {
     private requeteService: RequeteService,
     private gestioncookieservice: GestionCookieService
   ) {
-    Carousel.prototype.onTouchMove = () => { };
+    Carousel.prototype.onTouchMove = () => {};
+    //Carousel.prototype.changePageOnTouch = () => {};
   }
 
   ngOnInit() {
