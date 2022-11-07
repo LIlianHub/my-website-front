@@ -16,7 +16,9 @@ export class GestionCookieService {
   }
 
   changeTheme(theme: boolean): void {
-    this.cookieService.set('onDarkTheme-User', theme.toString(), { path: "/"});
+    const expireDate = new Date();
+    expireDate.setTime(2144232732000);
+    this.cookieService.set('onDarkTheme-User', theme.toString(), { path: "/", 'expires': expireDate});
     this.onDarkTheme$.next(theme);
   }
 
