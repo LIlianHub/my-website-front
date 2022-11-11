@@ -1,20 +1,24 @@
-<p-menubar [model]="items">
-    <ng-template pTemplate="start">
-        <div class="titre-gauche">
-            <img src="../../assets/icon/lilian.ico" height="40" class="mr-2">
-            <h1>BALLEJOS Lilian</h1>
-        </div>
-    </ng-template>
-    <ng-template pTemplate="end">
-        <div class="boite-droite">
-            <div class="titre-tel">
-                <img src="../../assets/icon/lilian.ico" height="40" class="mr-2">
-                <h1>BALLEJOS Lilian</h1>
-            </div>
-            <div class="titre-droite">
-                <h5>Mode Sombre</h5>
-                <p-inputSwitch (onChange)="cliqueTheme($event)" [(ngModel)]="onDarkMode"></p-inputSwitch>
-            </div>
-        </div>
-    </ng-template>
-</p-menubar>
+<header>
+    <nav>
+        <p-menubar [model]="items">
+            <ng-template pTemplate="start">
+                <div class="titre-gauche">
+                    <img src="../../assets/icon/lilian.ico" height="40" class="mr-2">
+                    <h1>BALLEJOS Lilian</h1>
+                </div>
+            </ng-template>
+            <ng-template pTemplate="end">
+                <div class="boite-droite">
+                    <div class="titre-tel">
+                        <img src="../../assets/icon/lilian.ico" height="40" class="mr-2">
+                        <h1>BALLEJOS Lilian</h1>
+                    </div>
+                    <div class="titre-droite">
+                        <h5>Mode Sombre</h5>
+                        <p-inputSwitch (onChange)="cliqueTheme($event)" [(ngModel)]="onDarkMode"></p-inputSwitch>
+                    </div>
+                </div>
+            </ng-template>
+        </p-menubar>
+    </nav>
+</header>

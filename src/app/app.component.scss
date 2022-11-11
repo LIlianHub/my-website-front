@@ -1,17 +1,17 @@
 @font-face {
-    font-family: "Pour le titre";
-    src: url("../assets/font/b28b8b56b2368e797d2c09f5696de8b5.woff2") format("woff2"),
-        url("../assets/font/b28b8b56b2368e797d2c09f5696de8b5.woff") format("woff");
+  font-family: "Pour le titre";
+  src: url("../assets/font/b28b8b56b2368e797d2c09f5696de8b5.woff2") format("woff2"),
+    url("../assets/font/b28b8b56b2368e797d2c09f5696de8b5.woff") format("woff");
 }
 
 
 /*golbal background for every module*/
 .background-blue {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .background-dark {
-    background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
 }
 
 
@@ -98,18 +98,25 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
 /*loading*/
 
 .loading-accueil {
-    width: 100%;
+  width: 100%;
+  margin-bottom: 30%;
+  margin-top: 10%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loading-accueil h2 {
+  font-size: 2em;
+  color: rgb(70, 70, 70);
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+  .loading-accueil {
     margin-bottom: 100%;
     margin-top: 30%;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
-  
-  .loading-accueil h2 {
-    font-size: 2em;
-    color: rgb(70, 70, 70);
-    margin-bottom: 10px;
-  }
+}
