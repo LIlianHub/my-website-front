@@ -41,7 +41,7 @@
     display: none;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -56,13 +56,17 @@
 
 
 
+
+
+
+
 @media only screen and (max-width: 960px) {
 
     .titre-gauche {
         display: none;
     }
 
-    .titre-tel{
+    .titre-tel {
         display: flex;
     }
 }

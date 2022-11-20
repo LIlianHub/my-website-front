@@ -1,9 +1,8 @@
 <app-header></app-header>
-<div class="corps" [class]="couleurBackground">
-  <div class="bubbles">
+<div class="bubbles" [class]="couleurBackground">
     <div class="loading-accueil" *ngIf="!loading">
-      <h2>Chargement...</h2>
-      <p-progressSpinner></p-progressSpinner>
+        <h2>Chargement...</h2>
+        <p-progressSpinner></p-progressSpinner>
     </div>
     <div class="bubble"></div>
     <div class="bubble"></div>
@@ -55,17 +54,14 @@
     <div class="bubble"></div>
     <div class="bubble"></div>
     <div class="bubble"></div>
-
-    <div class="context" *ngIf="loading">
-
-      <p-carousel styleClass="items-carousel" [value]="presentations" [numVisible]="1" [numScroll]="1"
-        [autoplayInterval]="5000" [circular]="false">
-        <ng-template let-prod pTemplate="monProduit">
-          <app-element-accueil [monContenu]="prod"></app-element-accueil>
-        </ng-template>
-      </p-carousel>
-
+    <div class="grosse-boite" *ngIf="loading">
+        <div class="petite-boite">
+            <pdf-viewer [src]="pdfSrc" [render-text]="true" [original-size]="false" [external-link-target]="'blank'"
+                [show-all]="true">
+            </pdf-viewer>
+            <a [href]="pdfSrc" download="cv_ballejos">Télécharger</a>
+        </div>
     </div>
-  </div>
 </div>
-<app-footer></app-footer>
+
+<app-footer> </app-footer>

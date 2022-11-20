@@ -1,0 +1,55 @@
+@import "../app.component.scss";
+
+pdf-viewer {
+    height: 90vh;
+    width: 70vh;
+}
+
+.grosse-boite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.petite-boite{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.521);
+    border: 1px solid rgba(204, 216, 218, 0.404);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 1;
+    width: 60%;
+    
+}
+
+.petite-boite a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(3, 121, 3);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 960px) {
+    pdf-viewer {
+        width: 95%;
+        height: 50vh;
+        
+    }
+
+    .petite-boite{
+        width: 95%;
+    }
+  
+}

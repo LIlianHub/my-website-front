@@ -37,8 +37,8 @@ export class HeaderComponent implements OnInit {
         label: 'Mes CVs',
         icon: 'pi pi-fw pi-print',
         items: [
-          { label: 'CV Français', url: 'assets/cv/fr.pdf' },
-          { label: 'CV Anglais', url: 'assets/cv/en.pdf' },
+          { label: 'CV Français', routerLink: '/cv/fr' },
+          { label: 'CV Anglais', routerLink: '/cv/en' },
         ],
       },
       {
